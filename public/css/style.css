@@ -1,0 +1,213 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: whitesmoke;
+}
+
+.fa-cable-car {
+    color: rgb(221, 41, 41);
+    font-size: 2.3rem;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0) !important;
+}
+
+.f-info-links a {
+    text-decoration: none !important;
+    color: black;
+}
+
+.f-info-links, .f-info-socials  {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline !important;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 0.4rem;
+}
+
+.f-info {
+    text-align: center;
+    display: flex;
+    background-color: aliceblue;
+    height: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+/* Card Effect */
+.card-img-overlay {
+    opacity: 0 ;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+} 
+
+.add-btn {
+    background-color: rgb(221, 41, 41) !important;
+    border: none !important;
+}
+
+.edit-btn {
+    background-color: rgb(221, 41, 41) !important;
+    border: none !important;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* LANDING PAGE */
+
+.hero-section {
+    height: 90vh;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.hero-overlay {
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.explore-btn {
+    background-color: rgb(221, 41, 41);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: rgb(200, 30, 30);
+    color: white;
+}
+
+.features-section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.feature-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 2rem;
+    color: rgb(221, 41, 41);
+    margin-bottom: 1rem;
+}
+
+.search-btn {
+    background-color: rgb(221, 41, 41);
+    color: white;
+    border-radius: 25px;
+    padding: 0.6rem 1.3rem;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    white-space: nowrap;
+}

@@ -1,0 +1,104 @@
+<style>
+  .search-btn {
+    background-color: rgb(221, 41, 41);
+    color: white;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border: none;
+  }
+
+  .search-btn:hover {
+    background-color: rgb(200, 30, 30);
+    color: white;
+  }
+
+  .search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+  }
+
+  .nav-auth {
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    border: 1px solid black;
+    background-color: white;
+    transition: 0.3s;
+  }
+
+  .nav-auth:hover {
+    background-color: rgb(221, 41, 41);
+    color: white;
+    border: 1px solid rgb(221, 41, 41);
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .brand-text {
+    color: black;
+    margin-left: 0.4rem;
+  }
+</style>
+
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <i class="fa-solid fa-cable-car"></i>
+      <span class="brand-text">FlyAway</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+      <div class="navbar-nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/listings">Explore</a>
+      </div>
+
+      <div class="navbar-nav ms-auto">
+        <form class="d-flex" role="search">
+          <input 
+            class="form-control me-2 search-inp" 
+            type="search" 
+            name="search"
+            id="search"
+            placeholder="Search destination"
+          >
+
+          <button class="btn search-btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+          </button>
+        </form>
+      </div>
+
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="/listings/new">Add New Listing</a>
+
+        <% if(!currUser) { %>
+          <a class="nav-link" href="/signup">
+            <button class="nav-auth">Signup</button>
+          </a>
+
+          <a class="nav-link" href="/login">
+            <button class="nav-auth">Login</button>
+          </a>
+        <% } %>
+
+        <% if(currUser) { %>
+          <a class="nav-link" href="/logout">
+            <button class="nav-auth">Logout</button>
+          </a>
+        <% } %>
+      </div>
+
+    </div>
+  </div>
+</nav>
